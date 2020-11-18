@@ -9,6 +9,7 @@ const collection = 'data'
 
 const app = express();
 app.use(cors())
+// Jäsentää käyttäjän lähettämän json datan
 app.use(bodyParser.json())
 
 // Näytä kaikki taskit
