@@ -46,21 +46,13 @@ curl localhost:PORT_NUMBER/tag | jq
 ### POST
 
 ```
-curl -X POST -H "Content-Type: application/json" -d {
-    "name": "Name of task",
-    "summary": "something extra to add"
-    "tag": "tag of task like work, chores, school etc"
-} localhost:PORT_NUMBER
+curl -X POST -H "Content-Type: application/json" -d '{"name": "Name of task","summary": "something extra to add","tag": "tag of task like work, chores, school etc"}' localhost:PORT_NUMBER
 ```
 
 ### PUT
 
 ```
-curl -X PUT -H "Content-Type: application/json" -d{
-    "name": "Name of task",
-    "summary": "something extra to add"
-    "tag": "tag of task like work, chores, school etc"
-} localhost:PORT_NUMBER/id
+curl -X PUT -H "Content-Type: application/json" -d '{"name": "Name of task", "summary": "something extra to add", "tag": "tag of task like work, chores, school etc"}' localhost:PORT_NUMBER/id
 ```
 
 ### DELETE
